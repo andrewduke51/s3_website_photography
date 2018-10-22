@@ -29,3 +29,11 @@ variable "acl" {
   description = "The acl rule for the bucket"
   default = "private"
 }
+
+variable "shared_profile" {
+  description = "aws profile"
+}
+
+variable "profile_name" {
+  description = "name of your profile"
+}

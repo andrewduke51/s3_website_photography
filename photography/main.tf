@@ -3,9 +3,9 @@
 ###############
 
 provider "aws" {
-  access_key = "${var.aws_access_key_id}"
-  secret_key = "${var.aws_secret_key_id}"
-  region = "${var.default_region}"
+  region                  = "${var.default_region}"
+  shared_credentials_file = "${var.shared_profile}"
+  profile                 = "${var.profile_name}"
 }
 
 resource "aws_s3_bucket" "sophia_bucket" {
