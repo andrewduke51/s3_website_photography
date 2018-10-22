@@ -31,5 +31,6 @@
 *ubuntu-xenial*
 *.vagrant/
 *temp/
+*html/
 *scripts/
 ubuntu-xenial-16.04*
