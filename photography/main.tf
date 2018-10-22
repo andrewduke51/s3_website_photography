@@ -17,7 +17,12 @@ resource "aws_s3_bucket" "sophia_bucket" {
     enabled = "${var.versioning}"
   }
 
-  tags {
+  website {
+    index_document = "index.html"
+    error_document = "error.html"
+  }
+
+    tags {
     name = "${var.bucket_name}"
   }
 }
