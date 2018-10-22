@@ -1,12 +1,3 @@
-
-variable "aws_access_key_id" {
-  description = "aws access key"
-}
-
-variable "aws_secret_key_id" {
-  description = "aws secret key"
-}
-
 variable "default_region" {
   description = "The region in which to create the bucket"
 }
